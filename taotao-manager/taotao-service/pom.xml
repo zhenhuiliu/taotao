@@ -9,8 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.taotao.manager.mapper</groupId>
-    <artifactId>taotao-manager-mapper</artifactId>
+    <groupId>com.taotao.manager.service</groupId>
+    <artifactId>taotao-service</artifactId>
 
 
 </project>

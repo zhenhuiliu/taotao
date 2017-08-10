@@ -9,9 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.taotao.commons</groupId>
+    <groupId>com.taotao.manager.commons</groupId>
     <artifactId>taotao-commons</artifactId>
-    <packaging>pom</packaging>
 
 
 </project>
