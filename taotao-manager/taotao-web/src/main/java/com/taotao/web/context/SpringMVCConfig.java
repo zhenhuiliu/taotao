@@ -106,12 +106,12 @@ public class SpringMVCConfig extends WebMvcConfigurerAdapter {
 		super.addInterceptors(registry);
 	}
 
-	@Bean(name = "multipartResolver")
+	/*@Bean(name = "multipartResolver")
 	public CommonsMultipartResolver commonsMultipartResolver() {
 
 		CommonsMultipartResolver commonsMultipartResolver = new CommonsMultipartResolver();
 		commonsMultipartResolver.setDefaultEncoding("UTF-8");
 		// commonsMultipartResolver.setMaxUploadSize(30*1024*1024);
 		return commonsMultipartResolver;
-	}
+	}*/
 }

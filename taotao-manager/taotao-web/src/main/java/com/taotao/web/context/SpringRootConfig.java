@@ -23,20 +23,4 @@ import java.io.IOException;
 @ComponentScan(basePackages = "com.taotao.web", excludeFilters = { @Filter(Controller.class), @Filter(Configuration.class) })
 public class SpringRootConfig {
 
-	@Bean
-	public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
-		return new PropertySourcesPlaceholderConfigurer();
-	}
-
-
-	/**
-	 *
-	 * @return
-	 * @throws IOException
-	 */
-	@Bean
-	public ResourcePropertySource peripheralUrisProperties() throws IOException {
-		return new ResourcePropertySource("classpath:/system.properties");
-	}
-
 }
