@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://code.alibabatech.com/schema/dubbo
+		http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+		">
+	<!-- App版本 -->
+	<dubbo:reference id="appVersionQueryFacade" group="query"
+		interface="com.lefu.alliance.api.inner.dubbo.AppVersionFacade" check="false" retries="0" timeout="90000" />
+
+	<!-- 合伙人服务 -->
+  	<dubbo:reference id="recommenderCoreFacade" group="core" interface="com.lefu.alliance.api.inner.dubbo.RecommenderFacade" check="false" retries="0" timeout="90000" />
+  	<dubbo:reference id="recommenderQueryFacade" group="query" interface="com.lefu.alliance.api.inner.dubbo.RecommenderFacade" check="false" retries="0" timeout="90000" />
+
+	<!-- Pos查询服务 -->
+	<dubbo:reference id="posQueryFacade" group="query"
+		interface="com.lefu.alliance.api.inner.dubbo.PosFacade" check="false" retries="0" timeout="90000" />
+	<!-- Pos核心服务 -->
+	<dubbo:reference id="posCoreFacade" group="core"
+		interface="com.lefu.alliance.api.inner.dubbo.PosFacade" check="false" retries="0" timeout="90000" />
+
+
+	<!-- 反馈消息服务 -->
+	<dubbo:reference id="appFeedbackFacade" group="core"
+		interface="com.lefu.alliance.api.inner.dubbo.AppFeedbackFacade" check="false" retries="0" timeout="90000" />
+
+
+	<!-- 操作员核心服务 -->
+	<dubbo:reference id="operatorCoreFacade" group="core"
+		interface="com.lefu.alliance.api.inner.dubbo.OperatorFacade" check="false" retries="0" timeout="90000" />
+	<!-- 操作员查询服务 -->
+	<dubbo:reference id="operatorQueryFacade" group="query"
+		interface="com.lefu.alliance.api.inner.dubbo.OperatorFacade" check="false" retries="0" timeout="90000" />
+
+	<!-- 系统变量查询服务 -->
+	<dubbo:reference id="sysVariableQueryFacade" group="query"
+		interface="com.lefu.alliance.api.inner.dubbo.SysVariableFacade" check="false" retries="0" timeout="90000" />
+
+		<!-- 字典服务 -->
+	<dubbo:reference id="dictionaryQueryFacade" group="query"
+		interface="com.lefu.alliance.api.inner.dubbo.DictionaryFacade" check="false" retries="0" timeout="90000" />
+
+	<!-- app广告查询服务 -->
+	<dubbo:reference id="appAdvertiseInfoQueryFacade" group="query"
+		interface="com.lefu.alliance.api.inner.dubbo.AppAdvertiseInfoFacade" check="false" retries="0" timeout="90000" />
+
+	<!-- app菜单服务服务 -->
+	<dubbo:reference id="appMenuQueryFacade" group="query"
+		interface="com.lefu.alliance.api.inner.dubbo.AppMenuFacade" check="false" retries="0" timeout="90000" />
+
+	<!-- 商户入网核心服务 -->
+	<dubbo:reference id="customerSubmitCoreFacade" group="core"
+		interface="com.lefu.alliance.api.inner.dubbo.CustomerSubmitFacade" check="false" retries="0" timeout="90000" />
+
+    <!-- 优惠商户入网核心服务 -->
+	<dubbo:reference id="discountCustomerSubmitCoreFacade" group="core"
+		interface="com.lefu.alliance.api.inner.dubbo.DiscountCustomerSubmitFacade" check="false" retries="0" timeout="90000" />
+
+	<!-- 商户入网查询服务 -->
+	<dubbo:reference id="customerSubmitQueryFacade" group="query"
+		interface="com.lefu.alliance.api.inner.dubbo.CustomerSubmitFacade" check="false" retries="0" timeout="90000" />
+
+
+	<!-- 商户核心服务 -->
+	<dubbo:reference id="customerCoreFacade" group="core"
+		interface="com.lefu.alliance.api.inner.dubbo.CustomerFacade" check="false" retries="0" timeout="90000" />
+
+	<!-- 商户查询服务 -->
+	<dubbo:reference id="customerQueryFacade" group="query"
+		interface="com.lefu.alliance.api.inner.dubbo.CustomerFacade" check="false" retries="0" timeout="90000" />
+
+	<!-- Pos采购核心服务 -->
+	<dubbo:reference id="posPurchaseCoreFacade" group="core"
+		interface="com.lefu.alliance.api.inner.dubbo.PosPurchaseFacade" check="false" retries="0" timeout="90000" />
+	<!-- Pos采购查询服务 -->
+	<dubbo:reference id="posPurchaseQueryFacade" group="query"
+		interface="com.lefu.alliance.api.inner.dubbo.PosPurchaseFacade" check="false" retries="0" timeout="90000" />
+
+	<!-- 资质补充查询服务 -->
+	<dubbo:reference id="qualificationSupplementQueryFacade" group="query"
+		interface="com.lefu.alliance.api.inner.dubbo.QualificationSupplementFacade" check="false" retries="0" timeout="90000" />
+	<!-- 资质补充核心服务 -->
+	<dubbo:reference id="qualificationSupplementCoreFacade" group="core"
+		interface="com.lefu.alliance.api.inner.dubbo.QualificationSupplementFacade" check="false" retries="0" timeout="90000" />
+
+	<!-- 交易查询服务 -->
+	<dubbo:reference id="transactionQueryFacade" group="query"
+		interface="com.lefu.alliance.api.inner.dubbo.TransactionFacade" check="false" retries="0" timeout="90000" />
+
+	<!-- 分润查询服务 -->
+	<dubbo:reference id="recommenderCommissionQueryFacade" group="query"
+		interface="com.lefu.alliance.api.inner.dubbo.RecommenderCommissionFacade" check="false" retries="0" timeout="90000" />
+
+	<!-- app公告核心服务 -->
+	<dubbo:reference id="appNoticeInfoCoreFacade" group="core"
+		interface="com.lefu.alliance.api.inner.dubbo.AppNoticeInfoFacade" check="false" retries="0" timeout="90000" />
+	<!-- app公告查询服务 -->
+	<dubbo:reference id="appNoticeInfoQueryFacade" group="query"
+		interface="com.lefu.alliance.api.inner.dubbo.AppNoticeInfoFacade" check="false" retries="0" timeout="90000" />
+
+	<!-- 消息核心服务 -->
+	<dubbo:reference id="appMessageInfoCoreFacade" group="core"
+		interface="com.lefu.alliance.api.inner.dubbo.AppMessageInfoFacade" check="false" retries="0" timeout="90000" />
+	<!-- 消息查询服务 -->
+	<dubbo:reference id="appMessageInfoQueryFacade" group="query"
+		interface="com.lefu.alliance.api.inner.dubbo.AppMessageInfoFacade" check="false" retries="0" timeout="90000" />
+
+	<!-- 账户查询服务 -->
+	<dubbo:reference id="accountQueryFacade" group="query"
+		interface="com.lefu.alliance.api.inner.dubbo.AccountFacade" check="false" retries="0" timeout="90000" />
+
+	 <!-- 风险处理服务 -->
+    <dubbo:reference id="riskCoreFacade" group="core" interface="com.lefu.alliance.api.inner.dubbo.RiskFacade" check="false" retries="0" timeout="90000" />
+    <dubbo:reference id="riskQueryFacade" group="query" interface="com.lefu.alliance.api.inner.dubbo.RiskFacade" check="false" retries="0" timeout="90000" />
+
+   <!-- 电子协议服务 -->
+    <dubbo:reference id="signCoreFacade" group="core" interface="com.lefu.alliance.api.inner.dubbo.SignFacade" check="false" retries="0" timeout="90000" />
+    <dubbo:reference id="signQueryFacade" group="query" interface="com.lefu.alliance.api.inner.dubbo.SignFacade" check="false" retries="0" timeout="90000" />
+
+    <!-- 500会员服务 -->
+    <dubbo:reference id="recommenderMemberCoreFacade" group="core" interface="com.lefu.alliance.api.inner.dubbo.RecommenderMemberFacade" check="false" retries="0" timeout="90000" />
+
+	<!-- 500会员机具采购相关接口 -->
+	<dubbo:reference id="specialPosPurchaseFacade" group="core" interface="com.lefu.alliance.api.inner.dubbo.SpecialPosPurchaseFacade" check="false" retries="0" timeout="90000" />
+
+	<!-- 加盟及实名认证状态接口 -->
+	<dubbo:reference id="recommenderJoinStatusCoreFacade" group="core" interface="com.lefu.alliance.api.inner.dubbo.RecommenderJoinStatusFacade" check="false" retries="0" timeout="90000" />
+	
+	<!-- 资质文件上传下载接口 -->
+	<dubbo:reference id="qualificationFileCoreFacade" group="core" interface="com.lefu.alliance.api.inner.dubbo.QualificationFileFacade" check="false" retries="0" timeout="90000" />
+	
+	<!-- 优惠商户接口 -->
+	<dubbo:reference id="favorCustomerCoreFacade" group="core" interface="com.lefu.alliance.api.inner.dubbo.FavorCustomerFacade" check="false" retries="0" timeout="90000" />
+	
+	<!-- 资质文件上传下载接口 -->
+	<dubbo:reference id="complianceQueryFacade" group="query" interface="com.lefu.alliance.api.inner.dubbo.ComplianceFacade" check="false" retries="0" timeout="90000" />
+	
+     <!-- 银行卡相关服务 -->
+    <dubbo:reference id="bankCardCoreFacade" group="core" interface="com.lefu.alliance.api.inner.dubbo.BankCardFacade" check="false" retries="0" timeout="90000" />
+    
+    <!-- ocr相关服务 -->
+    <!-- <dubbo:reference id="ocrFacade" group="core" interface="com.lefu.alliance.api.inner.dubbo.gate.OcrFacade" check="false" retries="0" timeout="90000" /> -->
+  
+ 	<!-- 优惠类商户类型与特殊资质类型关系Core服务 -->
+    <dubbo:reference id="discountCustImgRelationCoreFacade" group="core" interface="com.lefu.alliance.api.inner.dubbo.DiscountCustImgRelationFacade" check="false" retries="0" timeout="90000" />
+  	
+  	<!-- 商户费率变更查询服务 -->
+    <dubbo:reference id="customerFeeUpdateQueryFacade" group="query" interface="com.lefu.alliance.api.inner.dubbo.CustomerFeeUpdateFacade" check="false" retries="0" timeout="90000" />
+  	
+  	<!-- 商户费率变更核心服务 -->
+    <dubbo:reference id="customerFeeUpdateCoreFacade" group="core" interface="com.lefu.alliance.api.inner.dubbo.CustomerFeeUpdateFacade" check="false" retries="0" timeout="90000" />
+  
+    <!-- 消息服务 --> 
+   <dubbo:reference id="allianceMessageCoreFacade" group="core" interface="com.lefu.alliance.api.inner.dubbo.AllianceMessageFacade" check="false" retries="0" timeout="90000" />
+  
+  	<!-- 合伙人0元赠机查询服务 -->
+    <dubbo:reference id="recommenderAwardQueryFacade" group="query" interface="com.lefu.alliance.api.inner.dubbo.RecommenderAwardFacade" check="false" retries="0" timeout="90000" />
+
+</beans>
