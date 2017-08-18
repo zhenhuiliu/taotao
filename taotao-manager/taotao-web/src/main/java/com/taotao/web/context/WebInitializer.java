@@ -29,11 +29,11 @@ public class WebInitializer implements WebApplicationInitializer {
 		AnnotationConfigWebApplicationContext rootContext = new AnnotationConfigWebApplicationContext();
 		rootContext.register(SpringRootConfig.class);
 		ConfigurableEnvironment environment = rootContext.getEnvironment();
-		try {
-			environment.getPropertySources().addFirst(new ResourcePropertySource("classpath:/environment.properties"));
-		} catch (IOException e) {
-			logger.error("", e);
-		}
+//		try {
+//			environment.getPropertySources().addFirst(new ResourcePropertySource("classpath:/environment.properties"));
+//		} catch (IOException e) {
+//			logger.error("", e);
+//		}
 		// 管理Spring上下文的生命周期
 		servletContext.addListener(new ContextLoaderListener(rootContext));
 		// 将Spring上下文放入工具类

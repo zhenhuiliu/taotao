@@ -12,5 +12,12 @@
     <groupId>com.taotao.manager.service</groupId>
     <artifactId>taotao-service</artifactId>
 
+    <dependencies>
+
+        <dependency>
+            <groupId></groupId>
+            <artifactId></artifactId>
+        </dependency>
+    </dependencies>
 
 </project>
