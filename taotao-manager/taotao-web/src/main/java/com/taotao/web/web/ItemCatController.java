@@ -13,6 +13,7 @@ public class ItemCatController {
     @RequestMapping("/list")
     public String getList(HttpServletRequest request, @RequestParam("cid")String
                           cid){
-        return null;
+
+        return "SUCCESS";
     }
 }
