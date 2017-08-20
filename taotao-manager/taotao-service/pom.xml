@@ -15,8 +15,9 @@
     <dependencies>
 
         <dependency>
-            <groupId></groupId>
-            <artifactId></artifactId>
+            <groupId>com.taotao.manager.mapper</groupId>
+            <artifactId>taotao-mapper</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

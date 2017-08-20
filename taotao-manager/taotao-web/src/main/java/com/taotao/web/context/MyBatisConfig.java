@@ -20,12 +20,15 @@ import javax.sql.DataSource;
  * @author qinji.xu
  */
 @Configuration
-@MapperScan("com.lefu.alliance.core.dao")
+@MapperScan("com.taotao.mapper")
 @EnableTransactionManagement(order = 0)
 public class MyBatisConfig {
 	
-	private static final Logger logger = LoggerFactory.getLogger(MyBatisConfig.class);	
-	
+	private static final Logger logger = LoggerFactory.getLogger(MyBatisConfig.class);
+
+	/**
+	 *
+	 */
 	@javax.annotation.Resource
 	private DataSource dataSource;
 

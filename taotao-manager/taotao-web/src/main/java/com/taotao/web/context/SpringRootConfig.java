@@ -1,10 +1,7 @@
 package com.taotao.web.context;
 
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.*;
 import org.springframework.context.annotation.ComponentScan.Filter;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.io.support.ResourcePropertySource;
 import org.springframework.stereotype.Controller;
@@ -20,7 +17,8 @@ import java.io.IOException;
  */
 @Configuration
 @EnableAspectJAutoProxy
-@ComponentScan(basePackages = "com.taotao.web", excludeFilters = { @Filter(Controller.class), @Filter(Configuration.class) })
+@Import({MyBatisConfig.class,MariaDBConfig.class})
+@ComponentScan(basePackages = "com.taotao", excludeFilters = { @Filter(Controller.class), @Filter(Configuration.class) })
 public class SpringRootConfig {
 
 }

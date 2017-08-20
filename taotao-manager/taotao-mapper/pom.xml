@@ -12,5 +12,13 @@
     <groupId>com.taotao.manager.mapper</groupId>
     <artifactId>taotao-mapper</artifactId>
 
+    <dependencies>
+
+        <dependency>
+            <groupId>com.taotao.manager.pojo</groupId>
+            <artifactId>taotao-pojo</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
